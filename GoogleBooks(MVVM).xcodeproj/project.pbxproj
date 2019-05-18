@@ -8,24 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		DD1A400022908A15006C2417 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A3FFF22908A15006C2417 /* AppDelegate.swift */; };
-		DD1A400222908A15006C2417 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A400122908A15006C2417 /* ViewController.swift */; };
 		DD1A400722908A18006C2417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD1A400622908A18006C2417 /* Assets.xcassets */; };
 		DD1A400A22908A18006C2417 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1A400822908A18006C2417 /* LaunchScreen.storyboard */; };
 		DD3129282290B32B009423B3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3129272290B32B009423B3 /* Alamofire.framework */; };
 		DD31292A2290B339009423B3 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3129292290B339009423B3 /* Kingfisher.framework */; };
 		DD31292C2290B346009423B3 /* TinyConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD31292B2290B346009423B3 /* TinyConstraints.framework */; };
+		DD31292F2290B6F4009423B3 /* BooksAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31292E2290B6F4009423B3 /* BooksAPI.swift */; };
+		DD3129312290BC01009423B3 /* BooksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3129302290BC01009423B3 /* BooksService.swift */; };
+		DD3129332290BE04009423B3 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3129322290BE04009423B3 /* AppContainer.swift */; };
+		DD3129352290BE0C009423B3 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3129342290BE0C009423B3 /* AppRouter.swift */; };
+		DD3129382290BEF6009423B3 /* SearchBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3129372290BEF6009423B3 /* SearchBooksViewController.swift */; };
+		DD31293A2290BF06009423B3 /* SearchBooksBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3129392290BF06009423B3 /* SearchBooksBuilder.swift */; };
+		DD31293C2290BF10009423B3 /* SearchBooksContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31293B2290BF10009423B3 /* SearchBooksContracts.swift */; };
+		DD31293E2290BF2F009423B3 /* SearchBooksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31293D2290BF2F009423B3 /* SearchBooksViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DD1A3FFC22908A15006C2417 /* GoogleBooks(MVVM).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoogleBooks(MVVM).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD1A3FFF22908A15006C2417 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD1A400122908A15006C2417 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD1A400622908A18006C2417 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD1A400922908A18006C2417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD1A400B22908A18006C2417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD3129272290B32B009423B3 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		DD3129292290B339009423B3 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		DD31292B2290B346009423B3 /* TinyConstraints.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TinyConstraints.framework; path = Carthage/Build/iOS/TinyConstraints.framework; sourceTree = "<group>"; };
+		DD31292E2290B6F4009423B3 /* BooksAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksAPI.swift; sourceTree = "<group>"; };
+		DD3129302290BC01009423B3 /* BooksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksService.swift; sourceTree = "<group>"; };
+		DD3129322290BE04009423B3 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		DD3129342290BE0C009423B3 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		DD3129372290BEF6009423B3 /* SearchBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBooksViewController.swift; sourceTree = "<group>"; };
+		DD3129392290BF06009423B3 /* SearchBooksBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBooksBuilder.swift; sourceTree = "<group>"; };
+		DD31293B2290BF10009423B3 /* SearchBooksContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBooksContracts.swift; sourceTree = "<group>"; };
+		DD31293D2290BF2F009423B3 /* SearchBooksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBooksViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,16 +76,12 @@
 		DD1A3FFE22908A15006C2417 /* GoogleBooks(MVVM) */ = {
 			isa = PBXGroup;
 			children = (
-				DD3129252290B2DB009423B3 /* Scenes */,
+				DD3129212290B2DB009423B3 /* API */,
 				DD3129242290B2DB009423B3 /* APP */,
+				DD3129252290B2DB009423B3 /* Scenes */,
 				DD3129232290B2DB009423B3 /* Utilities */,
 				DD3129202290B2DB009423B3 /* Cummons */,
-				DD3129212290B2DB009423B3 /* API */,
 				DD3129222290B2DB009423B3 /* SupportFiles */,
-				DD1A3FFF22908A15006C2417 /* AppDelegate.swift */,
-				DD1A400122908A15006C2417 /* ViewController.swift */,
-				DD1A400622908A18006C2417 /* Assets.xcassets */,
-				DD1A400822908A18006C2417 /* LaunchScreen.storyboard */,
 				DD1A400B22908A18006C2417 /* Info.plist */,
 			);
 			path = "GoogleBooks(MVVM)";
@@ -87,6 +97,8 @@
 		DD3129212290B2DB009423B3 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				DD31292E2290B6F4009423B3 /* BooksAPI.swift */,
+				DD3129302290BC01009423B3 /* BooksService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -94,6 +106,8 @@
 		DD3129222290B2DB009423B3 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				DD1A400622908A18006C2417 /* Assets.xcassets */,
+				DD1A400822908A18006C2417 /* LaunchScreen.storyboard */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -108,6 +122,9 @@
 		DD3129242290B2DB009423B3 /* APP */ = {
 			isa = PBXGroup;
 			children = (
+				DD1A3FFF22908A15006C2417 /* AppDelegate.swift */,
+				DD3129322290BE04009423B3 /* AppContainer.swift */,
+				DD3129342290BE0C009423B3 /* AppRouter.swift */,
 			);
 			path = APP;
 			sourceTree = "<group>";
@@ -115,6 +132,7 @@
 		DD3129252290B2DB009423B3 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				DD3129362290BED2009423B3 /* SearchBooks */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -127,6 +145,17 @@
 				DD3129272290B32B009423B3 /* Alamofire.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD3129362290BED2009423B3 /* SearchBooks */ = {
+			isa = PBXGroup;
+			children = (
+				DD3129372290BEF6009423B3 /* SearchBooksViewController.swift */,
+				DD3129392290BF06009423B3 /* SearchBooksBuilder.swift */,
+				DD31293B2290BF10009423B3 /* SearchBooksContracts.swift */,
+				DD31293D2290BF2F009423B3 /* SearchBooksViewModel.swift */,
+			);
+			path = SearchBooks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,8 +252,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD1A400222908A15006C2417 /* ViewController.swift in Sources */,
+				DD3129312290BC01009423B3 /* BooksService.swift in Sources */,
+				DD31292F2290B6F4009423B3 /* BooksAPI.swift in Sources */,
+				DD3129352290BE0C009423B3 /* AppRouter.swift in Sources */,
+				DD3129332290BE04009423B3 /* AppContainer.swift in Sources */,
+				DD31293E2290BF2F009423B3 /* SearchBooksViewModel.swift in Sources */,
 				DD1A400022908A15006C2417 /* AppDelegate.swift in Sources */,
+				DD31293A2290BF06009423B3 /* SearchBooksBuilder.swift in Sources */,
+				DD31293C2290BF10009423B3 /* SearchBooksContracts.swift in Sources */,
+				DD3129382290BEF6009423B3 /* SearchBooksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

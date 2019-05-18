@@ -9,19 +9,23 @@
 /* Begin PBXBuildFile section */
 		DD1A400022908A15006C2417 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A3FFF22908A15006C2417 /* AppDelegate.swift */; };
 		DD1A400222908A15006C2417 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A400122908A15006C2417 /* ViewController.swift */; };
-		DD1A400522908A15006C2417 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1A400322908A15006C2417 /* Main.storyboard */; };
 		DD1A400722908A18006C2417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD1A400622908A18006C2417 /* Assets.xcassets */; };
 		DD1A400A22908A18006C2417 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1A400822908A18006C2417 /* LaunchScreen.storyboard */; };
+		DD3129282290B32B009423B3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3129272290B32B009423B3 /* Alamofire.framework */; };
+		DD31292A2290B339009423B3 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3129292290B339009423B3 /* Kingfisher.framework */; };
+		DD31292C2290B346009423B3 /* TinyConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD31292B2290B346009423B3 /* TinyConstraints.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DD1A3FFC22908A15006C2417 /* GoogleBooks(MVVM).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoogleBooks(MVVM).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD1A3FFF22908A15006C2417 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD1A400122908A15006C2417 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DD1A400422908A15006C2417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD1A400622908A18006C2417 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD1A400922908A18006C2417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD1A400B22908A18006C2417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD3129272290B32B009423B3 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		DD3129292290B339009423B3 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		DD31292B2290B346009423B3 /* TinyConstraints.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TinyConstraints.framework; path = Carthage/Build/iOS/TinyConstraints.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD31292C2290B346009423B3 /* TinyConstraints.framework in Frameworks */,
+				DD31292A2290B339009423B3 /* Kingfisher.framework in Frameworks */,
+				DD3129282290B32B009423B3 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,7 @@
 			children = (
 				DD1A3FFE22908A15006C2417 /* GoogleBooks(MVVM) */,
 				DD1A3FFD22908A15006C2417 /* Products */,
+				DD3129262290B32B009423B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +62,71 @@
 		DD1A3FFE22908A15006C2417 /* GoogleBooks(MVVM) */ = {
 			isa = PBXGroup;
 			children = (
+				DD3129252290B2DB009423B3 /* Scenes */,
+				DD3129242290B2DB009423B3 /* APP */,
+				DD3129232290B2DB009423B3 /* Utilities */,
+				DD3129202290B2DB009423B3 /* Cummons */,
+				DD3129212290B2DB009423B3 /* API */,
+				DD3129222290B2DB009423B3 /* SupportFiles */,
 				DD1A3FFF22908A15006C2417 /* AppDelegate.swift */,
 				DD1A400122908A15006C2417 /* ViewController.swift */,
-				DD1A400322908A15006C2417 /* Main.storyboard */,
 				DD1A400622908A18006C2417 /* Assets.xcassets */,
 				DD1A400822908A18006C2417 /* LaunchScreen.storyboard */,
 				DD1A400B22908A18006C2417 /* Info.plist */,
 			);
 			path = "GoogleBooks(MVVM)";
+			sourceTree = "<group>";
+		};
+		DD3129202290B2DB009423B3 /* Cummons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cummons;
+			sourceTree = "<group>";
+		};
+		DD3129212290B2DB009423B3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		DD3129222290B2DB009423B3 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		DD3129232290B2DB009423B3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DD3129242290B2DB009423B3 /* APP */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APP;
+			sourceTree = "<group>";
+		};
+		DD3129252290B2DB009423B3 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DD3129262290B32B009423B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD31292B2290B346009423B3 /* TinyConstraints.framework */,
+				DD3129292290B339009423B3 /* Kingfisher.framework */,
+				DD3129272290B32B009423B3 /* Alamofire.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +139,7 @@
 				DD1A3FF822908A15006C2417 /* Sources */,
 				DD1A3FF922908A15006C2417 /* Frameworks */,
 				DD1A3FFA22908A15006C2417 /* Resources */,
+				DD31292D2290B34E009423B3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -124,11 +190,33 @@
 			files = (
 				DD1A400A22908A18006C2417 /* LaunchScreen.storyboard in Resources */,
 				DD1A400722908A18006C2417 /* Assets.xcassets in Resources */,
-				DD1A400522908A15006C2417 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DD31292D2290B34E009423B3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/TinyConstraints.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD1A3FF822908A15006C2417 /* Sources */ = {
@@ -143,14 +231,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DD1A400322908A15006C2417 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD1A400422908A15006C2417 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DD1A400822908A18006C2417 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +364,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95Q8H6K2TQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "GoogleBooks(MVVM)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +386,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95Q8H6K2TQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "GoogleBooks(MVVM)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

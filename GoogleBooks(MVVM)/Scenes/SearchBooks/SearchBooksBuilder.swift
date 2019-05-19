@@ -11,6 +11,7 @@ import Foundation
 final class SearchBooksBuilder {
     static func make()->SearchBooksViewController {
         let controller = SearchBooksViewController()
+        controller.viewModel = SearchBooksViewModel()
         return controller
     }
 }

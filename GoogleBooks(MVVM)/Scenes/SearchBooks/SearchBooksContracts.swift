@@ -9,6 +9,15 @@
 import Foundation
 
 protocol SearchBooksProtocol {
-    
+    var delegate : SearchBooksDelegate? {get set}
+    func searchText(with SearchText: String)
+    func load()
 }
-
+enum searchBooksOutputs {
+    case pageTitle(String)
+    case isLoading(Bool)
+    case bookList(BookList)
+}
+protocol SearchBooksDelegate : class {
+    func handleOutputs(_ outputs: searchBooksOutputs)
+}

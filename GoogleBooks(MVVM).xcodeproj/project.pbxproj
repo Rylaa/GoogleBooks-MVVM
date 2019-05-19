@@ -21,6 +21,10 @@
 		DD31293A2290BF06009423B3 /* SearchBooksBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3129392290BF06009423B3 /* SearchBooksBuilder.swift */; };
 		DD31293C2290BF10009423B3 /* SearchBooksContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31293B2290BF10009423B3 /* SearchBooksContracts.swift */; };
 		DD31293E2290BF2F009423B3 /* SearchBooksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31293D2290BF2F009423B3 /* SearchBooksViewModel.swift */; };
+		DDBD792722916D5E00C28051 /* serializationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD792622916D5E00C28051 /* serializationError.swift */; };
+		DDBD792922916D7400C28051 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD792822916D7400C28051 /* Result.swift */; };
+		DDBD792B2291727100C28051 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD792A2291727100C28051 /* Alert.swift */; };
+		DDBD792D2291857C00C28051 /* SearchBooksTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD792C2291857C00C28051 /* SearchBooksTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		DD3129392290BF06009423B3 /* SearchBooksBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBooksBuilder.swift; sourceTree = "<group>"; };
 		DD31293B2290BF10009423B3 /* SearchBooksContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBooksContracts.swift; sourceTree = "<group>"; };
 		DD31293D2290BF2F009423B3 /* SearchBooksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBooksViewModel.swift; sourceTree = "<group>"; };
+		DDBD792622916D5E00C28051 /* serializationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = serializationError.swift; sourceTree = "<group>"; };
+		DDBD792822916D7400C28051 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		DDBD792A2291727100C28051 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		DDBD792C2291857C00C28051 /* SearchBooksTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBooksTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,11 +84,11 @@
 		DD1A3FFE22908A15006C2417 /* GoogleBooks(MVVM) */ = {
 			isa = PBXGroup;
 			children = (
+				DD3129202290B2DB009423B3 /* Cummons */,
 				DD3129212290B2DB009423B3 /* API */,
 				DD3129242290B2DB009423B3 /* APP */,
 				DD3129252290B2DB009423B3 /* Scenes */,
 				DD3129232290B2DB009423B3 /* Utilities */,
-				DD3129202290B2DB009423B3 /* Cummons */,
 				DD3129222290B2DB009423B3 /* SupportFiles */,
 				DD1A400B22908A18006C2417 /* Info.plist */,
 			);
@@ -115,6 +123,9 @@
 		DD3129232290B2DB009423B3 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				DDBD792622916D5E00C28051 /* serializationError.swift */,
+				DDBD792822916D7400C28051 /* Result.swift */,
+				DDBD792A2291727100C28051 /* Alert.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -151,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				DD3129372290BEF6009423B3 /* SearchBooksViewController.swift */,
+				DDBD792C2291857C00C28051 /* SearchBooksTableCell.swift */,
 				DD3129392290BF06009423B3 /* SearchBooksBuilder.swift */,
 				DD31293B2290BF10009423B3 /* SearchBooksContracts.swift */,
 				DD31293D2290BF2F009423B3 /* SearchBooksViewModel.swift */,
@@ -255,12 +267,16 @@
 				DD3129312290BC01009423B3 /* BooksService.swift in Sources */,
 				DD31292F2290B6F4009423B3 /* BooksAPI.swift in Sources */,
 				DD3129352290BE0C009423B3 /* AppRouter.swift in Sources */,
+				DDBD792722916D5E00C28051 /* serializationError.swift in Sources */,
 				DD3129332290BE04009423B3 /* AppContainer.swift in Sources */,
 				DD31293E2290BF2F009423B3 /* SearchBooksViewModel.swift in Sources */,
+				DDBD792D2291857C00C28051 /* SearchBooksTableCell.swift in Sources */,
+				DDBD792B2291727100C28051 /* Alert.swift in Sources */,
 				DD1A400022908A15006C2417 /* AppDelegate.swift in Sources */,
 				DD31293A2290BF06009423B3 /* SearchBooksBuilder.swift in Sources */,
 				DD31293C2290BF10009423B3 /* SearchBooksContracts.swift in Sources */,
 				DD3129382290BEF6009423B3 /* SearchBooksViewController.swift in Sources */,
+				DDBD792922916D7400C28051 /* Result.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

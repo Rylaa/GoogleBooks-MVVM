@@ -28,17 +28,18 @@
 
 import UIKit
 
-struct Books : Codable {
-    let volumeInfo : [VolumeInfo]
+struct BookList : Codable {
+    let items : [Items]
+}
+
+struct Items : Codable {
+    let volumeInfo : VolumeInfo
 }
 
 struct VolumeInfo : Codable {
-    let title       : String
-    let subtitle    : String
-    let pageCount   : Int
-    let publisher     : String
-    let publishedDate : String
-    let imageLinks : [ImageLinks]
+    let title,subtitle,publisher,publishedDate : String?
+    let pageCount   : Int?
+    let imageLinks : ImageLinks
 }
 
 struct ImageLinks : Codable {

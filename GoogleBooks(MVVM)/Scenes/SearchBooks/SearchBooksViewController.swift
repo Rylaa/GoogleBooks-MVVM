@@ -11,6 +11,11 @@ import UIKit
 class SearchBooksViewController : UITableViewController {
     
     //MARK: - Properties
+    var viewModel : SearchBooksProtocol? {
+        didSet {
+            viewModel?.delegate = self
+        }
+    }
     let searchController = UISearchController(searchResultsController: nil)
     let cellID = "cell"
     // MARK: - Init
@@ -30,7 +35,7 @@ class SearchBooksViewController : UITableViewController {
         navigationItem.searchController = searchController
         definesPresentationContext = true
         navigationItem.hidesSearchBarWhenScrolling = false
-//      tableView.tableHeaderView = searchController.searchBar
+        //tableView.tableHeaderView = searchController.searchBar
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -45,8 +50,27 @@ class SearchBooksViewController : UITableViewController {
 
 extension SearchBooksViewController : UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        print("asdas")
-
+        guard let strongText  = searchBar.text else { return }
+        self.viewModel?.searchText(with: strongText)
+        viewModel?.load()
     }
+}
+
+extension SearchBooksViewController : SearchBooksDelegate {
+    func handleOutputs(_ outputs: searchBooksOutputs) {
+        switch outputs {
+        case .pageTitle(let title):
+            self.title = title
+        case .isLoading(let isLoading):
+            print(isLoading)
+        //TODO: Implement
+        case .bookList(let booksList):
+            print(booksList.items[0].volumeInfo.title)
+            
+            //TODO: Implement
+            
+        }
+    }
+    
     
 }

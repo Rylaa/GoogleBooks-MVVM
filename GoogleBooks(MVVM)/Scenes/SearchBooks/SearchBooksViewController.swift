@@ -22,18 +22,15 @@ class SearchBooksViewController : UITableViewController {
         
     }
     func setupNavBar() {
-        
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.largeTitleDisplayMode = .always
-      
-        
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.delegate = self
-        searchController.searchBar.placeholder = "Search Candies"
+        searchController.searchBar.placeholder = "Search Google Books"
         navigationItem.searchController = searchController
         definesPresentationContext = true
         navigationItem.hidesSearchBarWhenScrolling = false
-//        tableView.tableHeaderView = searchController.searchBar
+//      tableView.tableHeaderView = searchController.searchBar
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -49,6 +46,7 @@ class SearchBooksViewController : UITableViewController {
 extension SearchBooksViewController : UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         print("asdas")
+
     }
     
 }
